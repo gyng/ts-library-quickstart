@@ -23,11 +23,13 @@ See `scripts` in `package.json` for more scripts.
 ### Setup
 
 1. Get an automation token from npm under settings
+
    ```
    https://www.npmjs.com/settings/$YOUR_USERNAME/tokens/
    ```
 
-2. Add the token to your repository secrets. 
+2. Add the token to your repository secrets.
+
    ```
    https://github.com/$YOUR_USERNAME/$YOUR_REPO_NAME/settings/secrets/actions/new
    ```
@@ -38,6 +40,7 @@ See `scripts` in `package.json` for more scripts.
 ### Run
 
 1. Create a new release.
+
    ```
    https://github.com/$YOUR_USERNAME/$YOUR_REPO_NAME/releases
    ```
