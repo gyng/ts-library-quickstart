@@ -14,7 +14,8 @@ esbuild.build({
   format: "esm",
   target: ["esnext"],
   watch: process.env["WATCH"] === "1",
-});
+})
+.catch(() => process.exit(1));
 
 // Build cjs
 esbuild
