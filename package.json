@@ -1,9 +1,9 @@
 {
   "name": "@gyng/esbuild-quickstart",
-  "version": "1.0.0",
-  "main": "index.js",
-  "module": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "version": "1.1.0",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/types/index.d.ts",
   "author": "Ng Guoyou <gyng@users.noreply.github.com>",
   "license": "MIT",
   "files": [
@@ -30,7 +30,7 @@
     "test:coverage": "yarn test --coverage",
     "test:watch": "yarn test --watch",
     "test": "jest",
-    "ts-types": " tsc --emitDeclarationOnly --outDir lib"
+    "ts-types": " tsc --emitDeclarationOnly --outDir lib/types"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
