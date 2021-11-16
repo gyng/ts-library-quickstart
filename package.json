@@ -11,6 +11,10 @@
     "package.json",
     "lib/**"
   ],
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
+  "repository": "git://github.com/gyng/esbuild-quickstart.git",
   "scripts": {
     "d": "WATCH=1 yarn build",
     "build": "rm -rf lib/* && yarn ts-types && node ./esbuild.js",
