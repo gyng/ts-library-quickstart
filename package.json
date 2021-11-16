@@ -16,19 +16,19 @@
     "url": "git://github.com/gyng/esbuild-quickstart.git"
   },
   "scripts": {
-    "d": "WATCH=1 yarn build",
     "build": "rm -rf lib/* && yarn ts-types && node ./esbuild.js",
-    "lint": "yarn lint:prettier && yarn lint:eslint",
-    "lint:fix": "yarn lint:prettier:fix && yarn lint:eslint:fix",
-    "lint:eslint": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx",
+    "d": "WATCH=1 yarn build",
     "lint:eslint:fix": "yarn lint:eslint --fix",
-    "lint:prettier": "prettier --check .",
+    "lint:eslint": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx",
+    "lint:fix": "yarn lint:prettier:fix && yarn lint:eslint:fix",
     "lint:prettier:fix": "prettier --write .",
-    "t": "yarn test",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn lint:prettier && yarn lint:eslint",
     "t:watch": "yarn test:watch",
-    "test": "jest",
-    "test:watch": "yarn test --watch",
+    "t": "yarn test",
     "test:coverage": "yarn test --coverage",
+    "test:watch": "yarn test --watch",
+    "test": "jest",
     "ts-types": " tsc --emitDeclarationOnly --outDir lib"
   },
   "devDependencies": {

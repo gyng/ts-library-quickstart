@@ -37,6 +37,8 @@ See `scripts` in `package.json` for more scripts.
    - Name: `NPM_TOKEN`
    - Value: The automation token you got from the previous step
 
+3. Update the `scope` key in `./github/workflows/publish.yml` to your GitHub (organisation) name
+
 ### Run
 
 1. Create a new release.
