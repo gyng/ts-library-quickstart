@@ -6,6 +6,11 @@
   "types": "lib/index.d.ts",
   "author": "Ng Guoyou <gyng@users.noreply.github.com>",
   "license": "MIT",
+  "files": [
+    "LICENSE",
+    "package.json",
+    "lib/**"
+  ],
   "scripts": {
     "d": "WATCH=1 yarn build",
     "build": "rm -rf lib/* && yarn ts-types && node ./esbuild.js",
@@ -16,8 +21,9 @@
     "lint:prettier": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
     "t": "yarn test",
-    "t:watch": "yarn test --watch",
+    "t:watch": "yarn test:watch",
     "test": "jest",
+    "test:watch": "yarn test --watch",
     "test:coverage": "yarn test --coverage",
     "ts-types": " tsc --emitDeclarationOnly --outDir lib"
   },
