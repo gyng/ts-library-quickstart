@@ -9,6 +9,7 @@
   "files": [
     "LICENSE",
     "package.json",
+    "README.md",
     "lib/**"
   ],
   "repository": {
