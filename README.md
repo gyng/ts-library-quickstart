@@ -41,12 +41,12 @@ See `scripts` in `package.json` for more scripts.
 
 ### Run
 
-1. Create a new release.
+1. Bump your version number in `package.json` before this. Publishing will fail if the version already exists.
+
+2. Create a new release.
 
    ```
    https://github.com/$YOUR_USERNAME/$YOUR_REPO_NAME/releases
    ```
 
    The workflow at `./github/workflows/publish.yml` should run and publish your packages to both NPM and GitHub Packages.
-
-   Don't forget to bump your version number in `package.json` before this.
