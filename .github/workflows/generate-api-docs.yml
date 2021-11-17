@@ -10,10 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Test
+      - name: Build
         run: docker-compose -f docker-compose.docs.yml up --build --exit-code-from app
 
-      - name: Deploy 🚀
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
