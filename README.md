@@ -1,5 +1,7 @@
 # esbuild-quickstart
 
+[Example API documentation](https://gyng.github.io/esbuild-quickstart/)
+
 Quickstart for esbuild library projects. Depends on `yarn`.
 
 - Typescript
@@ -41,6 +43,15 @@ Build targets are set in `esbuild.js`.
 
 3. Update the `scope` key in `./github/workflows/publish.yml` to your GitHub (organisation) name
 
+4. Configure GitHub Pages
+
+   ```
+   https://github.com/gyng/esbuild-quickstart/settings/pages
+   ```
+
+   - Source: `gh-pages` branch
+   - Directory: `/ (root)`
+
 ### Run
 
 1. Bump your version number in `package.json` before this. Publishing will fail if the version already exists.
@@ -52,3 +63,5 @@ Build targets are set in `esbuild.js`.
    ```
 
    The workflow at `./github/workflows/publish.yml` should run and publish your packages to both NPM and GitHub Packages.
+
+   Also, API documentation will be published to your GitHub pages via the `gh-pages` branch. It will be viewable at `https://$YOUR_NAME.github.io/$YOUR_REPO/`.
