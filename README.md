@@ -18,6 +18,8 @@ See `scripts` in `package.json` for more scripts.
 - `yarn lint`
 - `yarn build`
 
+Build targets are set in `esbuild.js`.
+
 ## Publish
 
 ### Setup

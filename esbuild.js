@@ -26,7 +26,7 @@ esbuild
     sourcemap: true,
     minify: true,
     platform: "node",
-    target: ["node16.13.0"],
+    target: ["node12"],
     watch: process.env["WATCH"] === "1",
   })
   .catch(() => process.exit(1));
