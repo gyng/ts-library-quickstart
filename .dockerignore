@@ -1,0 +1,9 @@
+coverage
+docs
+lib
+node_modules
+
+docker-compose.build.yml
+docker-compose.test.yml
+Dockerfile.build
+Dockerfile.test
