@@ -1,0 +1,63 @@
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@gyng/esbuild-quickstart</title><meta name="description" content="Documentation for @gyng/esbuild-quickstart"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">@gyng/esbuild-quickstart</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>@gyng/esbuild-quickstart</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#esbuild-quickstart" id="esbuild-quickstart" style="color: inherit; text-decoration: none;">
+  <h1>esbuild-quickstart</h1>
+</a>
+<p>Quickstart for esbuild library projects. Depends on <code>yarn</code>.</p>
+<ul>
+<li>Typescript</li>
+<li>Testing with jest</li>
+<li>Linting with prettier, eslint</li>
+<li>CI and skeleton CD with GitHub Actions</li>
+<li>Dockerfiles for build and test</li>
+<li>Publish to NPM and GitHub Packages by creating releases</li>
+</ul>
+
+<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+  <h2>Usage</h2>
+</a>
+<p>See <code>scripts</code> in <code>package.json</code> for more scripts.</p>
+<ul>
+<li><code>yarn d</code> watch and build</li>
+<li><code>yarn t:watch</code> watch and test</li>
+<li><code>yarn lint</code></li>
+<li><code>yarn build</code></li>
+</ul>
+<p>Build targets are set in <code>esbuild.js</code>.</p>
+
+<a href="#publish" id="publish" style="color: inherit; text-decoration: none;">
+  <h2>Publish</h2>
+</a>
+
+<a href="#setup" id="setup" style="color: inherit; text-decoration: none;">
+  <h3>Setup</h3>
+</a>
+<ol>
+<li><p>Get an automation token from npm under settings</p>
+<pre><code><span class="hl-5">https</span><span class="hl-1">:</span><span class="hl-6">//www.npmjs.com/settings/$YOUR_USERNAME/tokens/</span>
+</code></pre>
+</li>
+<li><p>Add the token to your repository secrets.</p>
+<pre><code><span class="hl-5">https</span><span class="hl-1">:</span><span class="hl-6">//github.com/$YOUR_USERNAME/$YOUR_REPO_NAME/settings/secrets/actions/new</span>
+</code></pre>
+<ul>
+<li>Name: <code>NPM_TOKEN</code></li>
+<li>Value: The automation token you got from the previous step</li>
+</ul>
+</li>
+<li><p>Update the <code>scope</code> key in <code>./github/workflows/publish.yml</code> to your GitHub (organisation) name</p>
+</li>
+</ol>
+
+<a href="#run" id="run" style="color: inherit; text-decoration: none;">
+  <h3>Run</h3>
+</a>
+<ol>
+<li><p>Bump your version number in <code>package.json</code> before this. Publishing will fail if the version already exists.</p>
+</li>
+<li><p>Create a new release.</p>
+<pre><code><span class="hl-5">https</span><span class="hl-1">:</span><span class="hl-6">//github.com/$YOUR_USERNAME/$YOUR_REPO_NAME/releases</span>
+</code></pre>
+<p>The workflow at <code>./github/workflows/publish.yml</code> should run and publish your packages to both NPM and GitHub Packages.</p>
+</li>
+</ol>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-class"><a href="classes/MyClass.html" class="tsd-kind-icon">My<wbr/>Class</a></li><li class="tsd-kind-interface"><a href="interfaces/IFoo.html" class="tsd-kind-icon">IFoo</a></li><li class="tsd-kind-variable"><a href="modules.html#HELLO" class="tsd-kind-icon">HELLO</a></li><li class="tsd-kind-function"><a href="modules.html#getFoo" class="tsd-kind-icon">get<wbr/>Foo</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li><li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li><li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
