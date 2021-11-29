@@ -1,4 +1,4 @@
-# esbuild-quickstart
+# ts-library-quickstart
 
 [Example API documentation](https://gyng.github.io/esbuild-quickstart/)
 
