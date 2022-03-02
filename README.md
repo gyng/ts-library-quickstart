@@ -1,6 +1,6 @@
 # ts-library-quickstart
 
-[Example API documentation](https://gyng.github.io/esbuild-quickstart/)
+[Example API documentation](https://gyng.github.io/ts-library-quickstart/)
 
 Quickstart for esbuild library projects. Depends on `yarn`.
 
