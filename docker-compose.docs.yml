@@ -3,8 +3,9 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile.docs
+      dockerfile: Dockerfile
       args:
         NODE_ENV: production
     volumes:
       - ./docs:/usr/src/app/docs:rw
+    command: "/usr/src/app/do-docs.sh"

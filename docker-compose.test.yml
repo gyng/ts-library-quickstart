@@ -3,6 +3,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile.test
+      dockerfile: Dockerfile
       args:
         NODE_ENV: test
+    command: "/usr/src/app/do-test.sh"
