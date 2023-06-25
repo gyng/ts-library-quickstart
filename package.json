@@ -1,6 +1,6 @@
 {
   "name": "@gyng/ts-library-quickstart",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "types": "lib/types/index.d.ts",
