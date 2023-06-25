@@ -15,7 +15,7 @@ jobs:
         run: docker-compose -f docker-compose.docs.yml up --build --exit-code-from app
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.4.2
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: docs
