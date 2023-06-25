@@ -6,7 +6,10 @@ const onEndPlugin = {
   name: "on-end",
   setup(build) {
     build.onEnd((result) => {
-      console.log(`build ended with ${result.errors.length} errors`);
+      console.log(`Build done. Errors: ${result.errors.length}`);
+      if (result.errors.length > 0) {
+        console.log(result.errors);
+      }
     });
   },
 };
@@ -20,10 +23,14 @@ let ctx = esbuild.context({
   splitting: true,
   format: "esm",
   target: ["esnext"],
+  plugins: [onEndPlugin],
 });
 
 // Build esm
-esbuild.build(ctx).catch(() => process.exit(1));
+esbuild
+  .build(ctx)
+  .then(() => console.log("ESM build done."))
+  .catch(() => process.exit(1));
 
 // Build cjs
 esbuild
@@ -35,7 +42,9 @@ esbuild
     minify: true,
     platform: "node",
     target: ["node18"],
+    plugins: [onEndPlugin],
   })
+  .then(() => console.log("CJS build done."))
   .catch(() => process.exit(1));
 
 // Dev mode

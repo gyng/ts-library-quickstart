@@ -20,7 +20,7 @@ See `scripts` in `package.json` for more scripts.
 - `npm run lint`
 - `npm run build`
 
-Build targets are set in `esbuild.js`.
+Build targets are set in `esbuild.mjs`.
 
 ## Publish
 
