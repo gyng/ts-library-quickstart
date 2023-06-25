@@ -54,7 +54,7 @@ Build targets are set in `esbuild.js`.
 
 ### Run
 
-1. Bump your version number in `package.json` before this. Publishing will fail if the version already exists.
+1. Bump your version number in `package.json` before this. Run `npm i` to update `package-lock.json`. Publishing will fail if the version already exists.
 
 2. Create a new release.
 
