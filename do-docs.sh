@@ -2,5 +2,5 @@
 set -euo pipefail
 
 mkdir -p docs/api
-yarn doc:gen
+npm run doc:gen
 ls docs/api
