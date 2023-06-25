@@ -1,8 +1,8 @@
 # ts-library-quickstart
 
-[Example API documentation](https://gyng.github.io/ts-library-quickstart/)
+Quickstart for esbuild library projects.
 
-Quickstart for esbuild library projects. Depends on `yarn`.
+[Example API documentation](https://gyng.github.io/ts-library-quickstart/)
 
 - Typescript
 - Testing with jest
@@ -15,10 +15,10 @@ Quickstart for esbuild library projects. Depends on `yarn`.
 
 See `scripts` in `package.json` for more scripts.
 
-- `yarn d` watch and build
-- `yarn t:watch` watch and test
-- `yarn lint`
-- `yarn build`
+- `npm run d` watch and build
+- `npm run t:watch` watch and test
+- `npm run lint`
+- `npm run build`
 
 Build targets are set in `esbuild.js`.
 

@@ -1,8 +1,8 @@
 #!/bin/sh
 set -euo pipefail
 
-yarn build
+npm run build
 # Enable if desired
-# yarn audit
-yarn lint
-yarn test:coverage
+# npm audit
+npm run lint
+npm run test:coverage

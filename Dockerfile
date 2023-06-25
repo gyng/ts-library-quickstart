@@ -7,10 +7,10 @@ WORKDIR /usr/src/app
 #     && apk upgrade \
 #     && apk add --no-cache git
 
-COPY package.json yarn.lock /usr/src/app/
-RUN yarn install --frozen-lockfile \
-    && yarn check --integrity \
-    && yarn cache clean
+COPY package.json package-lock.json /usr/src/app/
+RUN npm ci \
+    && npm audit signatures \
+    && npm cache clean --force
 
 ARG NODE_ENV=production
 COPY . /usr/src/app
